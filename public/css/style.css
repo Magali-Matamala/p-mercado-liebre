@@ -3,17 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+.con-marg {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ebebeb;
+    position: relative;
+    padding-bottom: 500px;
+    min-height: 100vh;
+}
 
 .cabecera {
-    padding-top: 10px;
     background-color: #EAC926;
-    padding-bottom: 10px;
 }
 .logo{
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    margin-bottom: 10px;
     position: relative;
    
 }
@@ -22,32 +26,30 @@
     margin-right: 10px;
 }
 .logo-input{
-    width: 40%;
-    
+    width: 30%;
     height: 40px;
     border: none;
     border-radius: 3px;
     padding: 3px;
-    position: relative;
-    left: 5px;
 }
 .logo-input-i {
    width: 8%;
    background-color: white;
-    height: 40px;
-    border: none;
-    border-radius: 3px;
-}
-#lupa{
+   height: 40px;
+   border-radius: 3px;
    position: relative;
-   top: 15px;
-   right: 15px;
+   right: 19px;
+}
+.lupa{
    color: #666;
+   position: absolute;
+   top: 13px;
+   left: 7px;
    
 }
 .frase{
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 13px;
@@ -58,16 +60,26 @@
 }
 .main-nav{
     padding: 20px 0px 20px;
-    display: none;
-    
+    display: none;  
+   
+
 }
-ul{
-    list-style: none;
-    display: flex;
+.main-nav-ul{
+    font-size: 13px;
+     display: flex;
+    flex-wrap: wrap;
+}
+.start{
+    list-style: none; 
     padding: 10px;
 }
-.crea-tu-cuenta{
-    margin-left: 220px;
+.margin{
+    flex-grow: 0.90;
+}
+
+.end{
+    list-style: none; 
+    padding: 10px;
 }
 a {
     text-decoration: none;
@@ -75,15 +87,15 @@ a {
     margin-left: 15px;
 }
 .burger-menu{
+    margin-left: 45%;
+    margin-bottom: 5px;
+    height: 35px;
     width: 45px;
-    margin: 0 auto;
-    text-align: center;
+    border: none;
     background-color: #1259c3;
     color: white;
-    padding: 6px;
-    border-radius: 5px;
-    font-size: 18px;   
-    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 16px
 }
 .img{
     width: 100%;
@@ -98,11 +110,13 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    position: relative;
 }
 
 .register-form label{
    display: flex;
    padding: 5px;
+   
 }
 .register-form-input{
   width: 100%;
@@ -115,6 +129,7 @@ a {
 }
 .compra-venta{
     display: flex;
+    
 }
 
 .title{
@@ -124,10 +139,11 @@ a {
 }
 .categories-input{
     position: relative;
-    bottom: 18px;
-    left: 70px;
+    bottom: 22px;
+    left: 80px;
 }
-.boton-registro-login{
+
+.boton-registro{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 100%;
     height: 40px;
@@ -136,15 +152,23 @@ a {
     margin-bottom: 5px;
     background-color:#1259c3;   
     color: white;
-   
+}
+.boton-login{
+    text-align: center;
+    width: 94%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    font-size: 1rem;
+    padding: 10px 110px;
+    border: none;
+    border-radius: 5px;
+    background-color:#1259c3;   
+    color: white;
+    position: absolute;
+    left: -3px;
+    bottom: 5px;
+
 }
 
-
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    background-color: #ebebeb;
-}
 main{
     margin: 0 auto;
     width: 90vw;    
@@ -157,11 +181,11 @@ main{
 .articulos{
     margin-top: 10px;
     border-top:solid 1px #ebebeb ;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     display: flex;
     flex-wrap: wrap;
     border-top:solid 1px #ebebeb;
     border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .problemitas{
     position: relative; 
@@ -173,6 +197,7 @@ main{
     border-bottom-right-radius: 10px;
 }
 .icono-envio{
+    
     color: #39b54a;
     display: block;
     font-size: 16px;
@@ -185,6 +210,7 @@ main{
     position: absolute;
     right: 20px;
     top: -15px;
+    
 }
 
 .imagen-producto{
@@ -223,6 +249,9 @@ main{
     background-color: white;
     margin-top: 25px;
     font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    
 }
 .footer{
     text-align: center;
@@ -236,17 +265,15 @@ main{
     margin-bottom: 10px;
 }
 .copy{
-    display: flex;
-    justify-content: end;
-     color: #666;
-
-   
+    color: #666;
 }
-
 
 
 @media  ( min-width: 488px) {
     /*tablet*/
+    .sin-marg{
+        padding-bottom: 250px;
+    }
     .cabecera{
         padding-top: 0px;
     }
@@ -263,16 +290,10 @@ main{
     .logo-input-i{
         width: 5%;
     }
-    #lupa{
-        position: absolute;
-        top: 46px;
-        right: 280px;
-        font-size: 15px;
-    }
+    
     .frase{
         width: 32%;
         font-size: 11px;
-        margin-left: 25px;
         margin-bottom: 20px;
     }
    .main-nav{
@@ -298,11 +319,24 @@ main{
    }
    .articulos{
     width: 45%; 
+    
+   }
+   .boton-login{
+    padding: 10px 150px;
+   }
+   .bloque-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   }
+   .footer{
+    width: 33.3%;
    }
    
 }
 @media  ( min-width: 769px) {
     /*laptopt*/
+   
     .logo img{
         width: 29%;
     }
@@ -313,10 +347,9 @@ main{
     .logo-input-i{
         width: 4%;
     }
-    #lupa{
-     top: 55px;
-     right: 320px;
-     font-size: 20px;
+    .lupa{
+     font-size: 15px;
+     left: 17px;
     }
     .frase{
         width: 20%;
@@ -327,36 +360,66 @@ main{
     .articulos{
         box-shadow: none;
         width: 22%;
-      
+    }
+    .icono-envio{
+      transition: all .5s ease;
+    }
+    .icono-envio:hover{
+        transform: rotate(1turn);
+    }
+    .articulos:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .descripcion{
-        display: none;
+      display: none;
     } 
+    .descripcion:hover{
+      display: block;
+      font-size: 16px;
+      color: #666; 
+      width: 100%;
+      padding: 5px 0px 15px 15px;
+    }
     .precio{
         width: 45%;
-   
     }
     .descuento{
-        width: 55%;
-     
+      width: 55%;
+      padding-left: 15px;
     }
     .tipografia-24{
         margin-left: 20px;
         font-size: 25px;
         padding: 15px;
+        padding-bottom: 2px;
      }
    
      #icono-envio{
         top: 190px;
      }
-     .crea-tu-cuenta{
-        margin-left: 420px;
-    }
+    
     a {
         text-decoration: none;
         color: black;
         margin-left: 20px;
     }
+    .boton-login{
+        padding: 10px 215px;
+    }
+    .register-form{
+        margin-top: 40px;
+    }
+    .register-form-input{
+        padding: 15px;
+    }
+    .boton-login:hover{
+      background-color: #0022AA;
+        
+    }
+    .icono-footer:hover{
+       color: #0022AA;
+    }
+    
 
 }
 @media  ( min-width: 1440px) {
@@ -369,9 +432,7 @@ main{
     #lupa{
         right: 430px;
      }
-     .crea-tu-cuenta{
-        margin-left: 720px;
-    }
+    
     a {
         text-decoration: none;
         color: black;
@@ -380,7 +441,21 @@ main{
     #icono-envio{
         top: 270px;
      }
-    
+     .register-form-input{
+        padding: 25px;
+     }
+     .boton-login{
+        padding: 15px 320px;
+    }
+    .register-form{
+        margin-top: 100px;
+    }
+}
+
+@media  ( min-width: 2560px){
+    .boton-login{
+        padding: 20px 630px;
+       }
 }
   
     
