@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon views/app.js"
+    "start": "node views/app.js"
   },
   "keywords": [],
   "author": "",
