@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.txt-center{
+    text-align: center;
+}
 .con-marg {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #ebebeb;
@@ -69,9 +72,22 @@
      display: flex;
     flex-wrap: wrap;
 }
+.f-c{
+    color: rgb(80, 80, 80);
+}
+.f-cx{
+    color: rgb(49, 49, 49);
+}
+.f-c:hover{
+    color: rgb(27, 27, 27);
+}
+.f-cx:hover{
+    color: rgb(17, 17, 17); 
+}
 .start{
     list-style: none; 
     padding: 10px;
+
 }
 .margin{
     flex-grow: 0.90;
@@ -95,7 +111,8 @@ a {
     background-color: #1259c3;
     color: white;
     border-radius: 10px;
-    font-size: 16px
+    font-size: 16px;
+    box-shadow: 2px 2px 2px rgb(126, 126, 126);
 }
 .img{
     width: 100%;
@@ -185,7 +202,7 @@ main{
     flex-wrap: wrap;
     border-top:solid 1px #ebebeb;
     border-radius: 10px; 
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 10px rgb(126, 126, 126);
 }
 .problemitas{
     position: relative; 
@@ -241,11 +258,12 @@ main{
 .tipografia-24{
    padding: 10px 0px 10px 0px;
     color: #666;
+    font-weight: 300;
+    font-size: 26px;
     
 }
 
 .bloque-footer{
-    padding: 15px;
     background-color: white;
     margin-top: 25px;
     font-size: 13px;
@@ -374,10 +392,10 @@ main{
         
     }
     .descripcion{
-        display: none;
+        visibility: hidden;
     }
     .articulos:hover .descripcion{
-      display: block;
+      visibility: visible;
       
     } 
     .precio{
@@ -406,9 +424,7 @@ main{
     .boton-login{
         padding: 10px 215px;
     }
-    .register-form{
-        margin-top: 40px;
-    }
+    
     .register-form-input{
         padding: 15px;
     }
@@ -416,7 +432,11 @@ main{
       background-color: #0022AA;
         
     }
-    .icono-footer:hover{
+    .boton-registro:hover{
+        background-color: #0022AA;
+          
+      }
+    .footer:hover .icono-footer{
        color: #0022AA;
     }
     
@@ -425,7 +445,7 @@ main{
 @media  ( min-width: 1440px) {
     /*desktop*/
     .img{
-        height: 220px;
+        height: 250px;
     }
     .logo-input{
         width: 38%; 
@@ -449,14 +469,12 @@ main{
      .boton-login{
         padding: 15px 320px;
     }
-    .register-form{
-        margin-top: 100px;
-    }
+    
 }
 
 @media  ( min-width: 2560px){
     .img{
-        height: 300px;
+        height: 430px;
     }
     .boton-login{
         padding: 20px 630px;
