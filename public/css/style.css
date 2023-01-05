@@ -13,48 +13,52 @@
     padding-bottom: 500px;
     min-height: 100vh;
 }
-
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w-100{
+ width: 100%;
+}
+.ai-center{
+    align-items: center;
+}
 .cabecera {
     background-color: #EAC926;
 }
 .logo{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    position: relative;
-   
+    padding: 20px 10px 10px 10px; 
 }
-.logo img{
-    width: 45%;
-    margin-right: 10px;
+.a-logo{
+  width: 50%;
+  margin-right: 5px;
 }
 .logo-input{
-    width: 30%;
     height: 40px;
     border: none;
     border-radius: 3px;
     padding: 3px;
+    width: 44%;
+    
 }
 .logo-input-i {
-   width: 8%;
+   width: 4%;
    background-color: white;
    height: 40px;
    border-radius: 3px;
    position: relative;
    right: 19px;
+   
 }
 .lupa{
    color: #666;
    position: absolute;
    top: 13px;
-   left: 7px;
-   
+   left: 7px; 
 }
 .frase{
     margin: 0 auto;
-    margin-top: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    
     font-size: 13px;
 }
 #mano{
@@ -62,15 +66,35 @@
     color: black;
 }
 .main-nav{
-    padding: 20px 0px 20px;
-    display: none;   
-
+    display: flex;
+    width: 47%;
+    display: none;
+    
 }
 .main-nav-ul{
+    padding: 20px 0px 20px 0px;
     font-size: 13px;
-     display: flex;
-    flex-wrap: wrap;
+    display: flex;
+    width: 50%;
+    justify-content: start;
+   
 }
+.main-nav-2{
+    padding: 20px 0px 20px;
+    display: flex;
+    width: 53%; 
+   display: none;
+}
+
+.main-nav-ul-2{
+    padding: 20px 0px 20px 0px;
+    font-size: 13px;
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+
 .f-c{
     color: rgb(80, 80, 80);
 }
@@ -85,21 +109,17 @@
 }
 .start{
     list-style: none; 
-    padding: 10px;
+    padding: 2px;
 
 }
-.margin{
-    flex-grow: 0.90;
-}
-
 .end{
     list-style: none; 
-    padding: 10px;
+    padding: 2px;
 }
 a {
     text-decoration: none;
-    color: black;
-    margin-left: 15px;
+    padding: 2px;
+    font-size: smaller;
 }
 .burger-menu{
     margin-left: 45%;
@@ -285,8 +305,34 @@ main{
     color: #666;
 }
 
-
-@media  ( min-width: 488px) {
+@media  ( min-width: 488px){
+    .burger-menu{
+       display: none;
+    }
+    .main-nav{
+       display: contents;
+    }
+    .main-nav-2{
+        display: contents;
+    }
+    .a-logo{
+        width: 32%;
+        align-self: center;
+    }
+    .logo-input{
+        width: 35%;
+        align-self: center;
+    }
+    .logo-input-i{
+        width: 4%;
+        align-self: center;
+    }
+    .frase{
+       width:25% ;
+       align-self: center;
+    }
+}
+@media  ( min-width: 600px) {
     /*tablet*/
     .sin-marg{
         padding-bottom: 250px;
@@ -294,33 +340,11 @@ main{
     .cabecera{
         padding-top: 0px;
     }
-    .logo{
-        align-items:center
-    }
-    .logo img{
-        width: 30%;
-    }
-    .logo-input{
-        width: 28%; 
-        
-    }
-    .logo-input-i{
-        width: 5%;
-    }
-    
-    .frase{
-        width: 32%;
-        font-size: 11px;
-        margin-bottom: 20px;
-    }
-   .main-nav{
-     display: contents;
-     
+   a{
+    padding: 5px;
+    font-size: revert;
    }
-   .burger-menu{
-    display: none;
-   }
-   
+ 
    .register-form{
     width: 55%;
    }
@@ -353,28 +377,15 @@ main{
 }
 @media  ( min-width: 769px) {
     /*laptopt*/
-    .img{
-        height: 150px;
-    }
-    .logo img{
-        width: 29%;
-    }
-    .logo-input{
-        width: 36%; 
-        
+    .logo{
+        padding: 15px 5px 5px 5px;
     }
     .logo-input-i{
-        width: 4%;
-    }
-    .lupa{
-     font-size: 15px;
-     left: 17px;
+        width:5%
     }
     .frase{
-        width: 20%;
-        font-size: 15px;
-        margin-left: 60px;
-       
+       width:20% ;
+      
     }
     .articulos{
         box-shadow: none;
@@ -456,8 +467,9 @@ main{
     
     a {
         text-decoration: none;
-        color: black;
-        margin-left: 30px;
+        font-size: larger;
+        padding: 10px;
+    
     }
     #icono-envio{
         top: 270px;
